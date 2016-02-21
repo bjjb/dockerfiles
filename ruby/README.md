@@ -5,7 +5,7 @@ From Ubuntu 14.04 (Trusty)
 ## Builds
 
 - ruby-install
-  - ruby 2.1.2
+  - ruby 2.3.0
     - bundler
 - nginx
 
