@@ -7,4 +7,4 @@ RUN apk add --no-cache nginx               && \
 COPY nginx.conf .
 VOLUME /etc/nginx/conf.d
 EXPOSE 80 443
-ENTRYPOINT nginx
+CMD nginx
