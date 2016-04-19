@@ -1,5 +1,10 @@
-FROM alpine
-MAINTAINER JJ Buckley <jj@jjbuckley.com>
-RUN apk --no-cache add nginx git vim
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+FROM alpine:3.3
+MAINTAINER JJ Buckley <jj@bjjb.org>
+LABEL Description="A minimal NginX container image"
+WORKDIR /etc/nginx
+RUN apk add --no-cache nginx               && \
+    rm -rv *.default /etc/nginx/default.d
+COPY nginx.conf .
+VOLUME /etc/nginx/conf.d
+EXPOSE 80 443
+ENTRYPOINT nginx
