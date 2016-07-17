@@ -1,5 +1,6 @@
+Port 22
+GatewayPorts yes
 HostKey /etc/ssh/ssh_host_rsa_key
 PermitRootLogin no
-PasswordAuthentication no
 AuthorizedKeysFile .ssh/authorized_keys
 Subsystem sftp /usr/lib/ssh/sftp-server
