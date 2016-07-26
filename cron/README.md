@@ -50,4 +50,5 @@ Most useful is to set up crontabs in a volume.
 
 ## Caveats
 
-* `crontab` is in the box, but won't work as expected unless it's suid.
+- `crontab` is in the box, but won't work as expected unless it's suid.
+- Using long running containers for admin tasks is not The Docker Way

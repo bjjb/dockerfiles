@@ -8,7 +8,7 @@ Collection of Dockerfiles for some web-app platforms I like to use.
 * [Go](go/)
 * [NodeJS](nodejs/)
 
-Unless otherwise noted, they're generally contain [Git][].
+Unless otherwise noted, they generally contain [Git][].
 
 [git]: http://git-scm.org/
 [MongoDB]: http://www.mongodb.org/
